@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cooleye.eot">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".ui.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".language.english.ui.WordStudyActivity"/>
+        <activity android:name=".language.english.ui.WordEmphasisActivity"/>
+        <activity android:name=".language.english.ui.WordCollectActivity"/>
+        <activity android:name=".media.ui.MediaActivity"/>
+        <activity android:name=".media.ui.LocalMediaActivity"/>
+        <activity android:name=".media.ui.StreamMediaActivity"/>
+        <activity android:name=".media.ui.AudioMediaActivity"/>
+        <activity android:name=".wheel.WheelDemo"/>
+        <activity
+            android:name=".wheel.TimeActivity"
+            android:label="Time">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.Time2Activity"
+            android:label="Time2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.DateActivity"
+            android:label="Date">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.PasswActivity"
+            android:label="Password">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.SlotMachineActivity"
+            android:label="Slot_Machine">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.CitiesActivity"
+            android:label="Cities">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.SpeedActivity"
+            android:label="Speed">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.HoloWheelActivity"
+            android:label="Holo_Wheel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="kankan.wheel.extended.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".wheel.picker.PickerActivity"/>
+        <activity android:name=".wheel2.ui.Picker2Activity"/>
+        <activity android:name=".kotlin.ui.RidingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".kotlin.ui.RidingAddActivity">
+        </activity>
+    </application>
+
+</manifest>

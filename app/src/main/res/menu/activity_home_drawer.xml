@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/word_memory"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="单词记忆" />
+        <item
+            android:id="@+id/word_emphasis"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="重点单词" />
+        <item
+            android:id="@+id/word_collect"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="收藏单词" />
+        <item
+            android:id="@+id/sentence"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="优美句子" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_media"
+                android:icon="@drawable/ic_menu_share"
+                android:title="多媒体" />
+            <item
+                android:id="@+id/nav_wheel"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Wheel" />
+
+            <item
+                android:id="@+id/nav_picker"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Picker" />
+
+            <item
+                android:id="@+id/riding"
+                android:icon="@drawable/ic_menu_send"
+                android:title="riding" />
+        </menu>
+    </item>
+
+</menu>

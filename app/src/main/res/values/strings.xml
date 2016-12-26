@@ -1,0 +1,14 @@
+<resources>
+    <string name="application_name">Eot</string>
+    <string name="app_name">Eot</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="collect">收藏</string>
+    <string name="collect_cancel">取消收藏</string>
+    <string name="delete">删除</string>
+    <string name="word_emphasis_read_failed">读取强调单词失败！</string>
+    <string name="word_study_read_failed">读取学习单词失败！</string>
+</resources>

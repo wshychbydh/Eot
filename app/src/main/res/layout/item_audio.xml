@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item_audio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_b">
+
+    <ImageButton
+        android:id="@+id/audio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_menu_camera"/>
+
+    <ProgressBar
+        android:id="@+id/audio_progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_toRightOf="@id/audio_btn"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/audio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/audio_btn"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/audio_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_name"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_toRightOf="@id/audio_btn"/>
+
+    <TextView
+        android:id="@+id/audio_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/audio_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_toRightOf="@id/audio_size"/>
+</RelativeLayout>

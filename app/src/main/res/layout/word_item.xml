@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cooleye.eot.ui.widget.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/word_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:bga_sil_bottomMode="pullOut"
+    app:bga_sil_springDistance="20dp"
+    app:bga_sil_swipeDirection="left">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/word_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:text="@string/delete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/word_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:text="@string/collect"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin">
+
+        <TextView
+            android:id="@+id/word_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="word"
+            android:textSize="@dimen/content_b" />
+
+        <TextView
+            android:id="@+id/chinese_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/word_textview"
+            android:text="chinese"
+            android:textSize="@dimen/content_b" />
+    </RelativeLayout>
+
+</cooleye.eot.ui.widget.SwipeItemLayout>
